@@ -12,7 +12,7 @@ def call() {
 	process.waitFor()
 
 
-	if (process.exitvalue()
+	if (process.exitvalue() == 0) {
 		println "Artifactory deployment successful!"
 		} else {
 			println "Artifactory deployment failed. Exit code: $(process.exitvalue()}"
