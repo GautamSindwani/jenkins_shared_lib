@@ -6,7 +6,7 @@
 // 	def password='Admin@123' // Replace with your Artifactory password
 
 // 	def curlCommand = """
-// 		curl -X PUT -u $username: $password -T $jarPath $artifactoryUrl
+// 		curl -X PUT -u $username:$password -T $jarPath $artifactoryUrl
 // 	"""
 
 // 	def process = curlCommand.execute()
